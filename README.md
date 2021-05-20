@@ -18,7 +18,19 @@ Include a dependency on this project in your `deps.edn`. You will probably wish 
 Then, invoke Clojure via the command line, invoking the `test` alias:
 
 ```bash
-clj -Atest
+clj -M:test
+```
+
+or test specific namespaces
+
+```bash
+clj -M:test <ns1> <ns2> 
+```
+
+or run auto tests (watch mode)
+
+```bash
+clj -M:test auto
 ```
 
 This will scan your project's `test` directory for any tests defined
